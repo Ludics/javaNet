@@ -15,11 +15,11 @@ public class testJSON{
             jo.put("age", 21);
             String ludi = jo.toString();
             //System.out.println(ludi);
-            // ludi = "[{\"name\":'ludi', 'age':21}, {'name': 'stt', 'age': 20}]";
-            ludi = "{\"userID\":\"15\", \"userName\":\"ludi129\"}";
-            JSONObject obj = new JSONObject(ludi);
-            System.out.println(ludi);
-            System.out.println(obj.get("userID"));
+            ludi = "[{'name':'ludi', 'age':21}, {'name': 'stt', 'age': 20}]";
+            // ludi = "{\"userID\":\"15\", \"userName\":\"ludi129\"}";
+            // JSONObject obj = new JSONObject(ludi);
+            // System.out.println(ludi);
+            // System.out.println(obj.get("userID"));
             JSONArray jsonArray = new JSONArray(ludi);
             int iSize = jsonArray.length();
             System.out.println("Size:" + iSize);
